@@ -1,0 +1,97 @@
+
+No commits yet
+
+Mudanças a serem submetidas:
+  (utilize "git rm --cached <arquivo>..." para não apresentar)
+
+	new file:   index.html
+
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git commit -m "Listas de cursos em index.html"
+[master (root-commit) 3e96c52] Listas de cursos em index.html
+ 1 file changed, 13 insertions(+)
+ create mode 100644 index.html
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git status
+No ramo master
+nothing to commit, working tree clean
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git status
+No ramo master
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   index.html
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git add index.html
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git status
+No ramo master
+Mudanças a serem submetidas:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   index.html
+
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git commit -m "numero 2 adicionado"
+[master 83775cf] numero 2 adicionado
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git config --local user name "Pedro Parreira Cunha"
+error: key does not contain a section: user
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git config --local user.name "Pedro Parreira Cunha"
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git config --local user.email "pedropcunha1916@gmail.com"
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ clear
+
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git log
+commit 83775cfc309cffd29066076abf61abfee05edc47 (HEAD -> master)
+Author: Tulio <tulio.parreira@helpper.com.br>
+Date:   Wed Feb 10 14:03:36 2021 -0300
+
+    numero 2 adicionado
+
+commit 3e96c52e0b8c9d9fabe5c358f4d521e0bf3f1f93
+Author: Tulio <tulio.parreira@helpper.com.br>
+Date:   Wed Feb 10 14:00:31 2021 -0300
+
+    Listas de cursos em index.html
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git config --local user.name "Pedro Parreira"
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git config --local user.name
+Pedro Parreira
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git log
+commit 83775cfc309cffd29066076abf61abfee05edc47 (HEAD -> master)
+Author: Tulio <tulio.parreira@helpper.com.br>
+Date:   Wed Feb 10 14:03:36 2021 -0300
+
+    numero 2 adicionado
+
+commit 3e96c52e0b8c9d9fabe5c358f4d521e0bf3f1f93
+Author: Tulio <tulio.parreira@helpper.com.br>
+Date:   Wed Feb 10 14:00:31 2021 -0300
+
+    Listas de cursos em index.html
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git config --local user.email
+pedropcunha1916@gmail.com
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git log --pretty="format:%H"
+83775cfc309cffd29066076abf61abfee05edc47
+3e96c52e0b8c9d9fabe5c358f4d521e0bf3f1f93
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git log --pretty="fomat:%h"
+fomat:83775cf
+fomat:3e96c52
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git log --pretty="format:%h"
+83775cf
+3e96c52
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git log --pretty="format:%h %s"
+83775cf numero 2 adicionado
+3e96c52 Listas de cursos em index.html
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git log --help
+
+[1]+  Parado                  git log --help
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ git log
+commit 83775cfc309cffd29066076abf61abfee05edc47 (HEAD -> master)
+Author: Tulio <tulio.parreira@helpper.com.br>
+Date:   Wed Feb 10 14:03:36 2021 -0300
+
+    numero 2 adicionado
+
+commit 3e96c52e0b8c9d9fabe5c358f4d521e0bf3f1f93
+Author: Tulio <tulio.parreira@helpper.com.br>
+Date:   Wed Feb 10 14:00:31 2021 -0300
+
+    Listas de cursos em index.html
+tulio@tulio:~/Área de Trabalho/logica/git-e-github$ 
